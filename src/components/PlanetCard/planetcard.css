@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&display=swap');
+
+.planetcard {
+
+}
+
+.planetcard-image {
+    height: 20px;
+}
+
+.tatoine {
+    grid-area: tatoine;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+.tatoine > img {
+    height: 84px;
+}
+
+.alderaan {
+    grid-area: alderaan;
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+}
+
+.alderaan > img {
+    height: 101px;
+}
+
+.yarvin {
+    grid-area: yarvin;
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
+}
+
+.yarvin > img {
+    height: 82px;
+}
+
+.bespin {
+    grid-area: bespin;
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+}
+
+.bespin > img {
+    height: 300px;
+}
+
+.endor {
+    grid-area: endor;
+    grid-column: 5 / 5;
+    grid-row: 2 / 2;
+}
+
+.endor > img {
+    height: 39px;
+}
+
+.naboo {
+    grid-area: naboo;
+    grid-column: 5 / 5;
+    grid-row: 3 / 3;
+}
+
+.naboo > img {
+    height: 98px;
+}
+
+.coruscant {
+    grid-area: coruscant;
+    grid-column: 2 / 2;
+    grid-row: 4 / 4;
+}
+
+.coruscant > img {
+    height: 99px;
+}
+
+.hoth {
+    grid-area: hoth;
+    grid-column: 1 / 1;
+    grid-row: 5 / 5;
+}
+
+.hoth > img {
+    height: 58px;
+}
+
+.kamino {
+    grid-area: kamino;
+    grid-column: 3 / 3;
+    grid-row: 5 / 5;
+}
+
+.kamino > img {
+    height: 160px;
+}
+
+.dagobah {
+    grid-area: dagobah;
+    grid-column: 5 / 5;
+    grid-row: 5 / 5;
+}
+
+.dagobah > img {
+    height: 72px;
+}
+
+.planetcard-information {
+    background-color: #316f3d;
+    opacity: 60%;
+    border-radius: .5rem;
+    width: fit-content;
+    padding: .1rem 2rem 2rem 2rem;
+}
+
+.planetcard-title {
+    font-size: x-large;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    text-align: center;
+}
+
+.planetcard-text {
+    font-size: large;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}

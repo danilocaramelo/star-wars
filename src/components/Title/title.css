@@ -1,0 +1,21 @@
+.title-container {
+    background: black;
+    height: 130px;
+    display: flex;
+}
+
+.title {
+    color: aliceblue;
+}
+
+.title-logo {
+    height: 100%;
+}
+
+.title-link {
+    color: #fdfdfd;
+    text-decoration: none;
+    font-size: large;
+    text-align: center;
+    margin: auto 2rem;
+}

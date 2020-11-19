@@ -1,0 +1,20 @@
+.planetslist {
+    width: 80%;
+    height: auto;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "tatoine . alderaan yarvin ."
+    ". . bespin . endor"
+    ". planetslist-image__starship . . naboo"
+    ". coruscant . . ."
+    "hoth . kamino . dagobah";
+}
+
+.planetslist-image__starship {
+    grid-area: planetslist-image__starship;
+    height: 38px;
+}
