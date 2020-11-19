@@ -8,8 +8,6 @@
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-template-rows: 50% 50%;
     width: 90%;
-    padding-left: 2rem;
-    padding-right: 2rem;
     margin: auto;
-    padding-bottom: 4rem;
+    padding: 4rem 2rem 4rem;
 }
