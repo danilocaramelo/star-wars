@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
+import RobotoFont from "./Fonts";
 
 export const GlobalStyle = createGlobalStyle`
+${RobotoFont}
 :root {
 --maxWidth: 1280px;
 --white: #fff;
@@ -15,13 +17,13 @@ export const GlobalStyle = createGlobalStyle`
 
  * {
 box-sizing: border-box;
-font-family: 'Abel', sans-serif;
 }
 
  body {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: Roboto, sans-serif;
 
  h1 {
 font-size: 2rem;

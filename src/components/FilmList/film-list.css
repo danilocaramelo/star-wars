@@ -1,0 +1,15 @@
+.film-list__title {
+
+}
+
+.film-list__container {
+    display: grid;
+    grid-gap: .7rem;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 50% 50%;
+    width: 90%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: auto;
+    padding-bottom: 4rem;
+}

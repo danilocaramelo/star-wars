@@ -1,0 +1,14 @@
+.banner-container {
+    height: 700px;
+}
+
+.banner {
+    background-color: #fdfdfd;
+    height: 600px;
+    width: 80%;
+    margin: auto;
+}
+
+.banner-introduction {
+    background: #000 url("../../assets/bg.jpg");
+}
