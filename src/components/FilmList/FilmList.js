@@ -26,13 +26,9 @@ export default class FilmList extends React.Component {
 
     render() {
         return(
-            <section>
-                <section className={"film-list__container"}>
-                    {this.state.films.map(film => <FilmCard key={film.episode_id} value={film}/>)}
-                </section>
+            <section className={"filmlist"}>
+                {this.state.films.map(film => <FilmCard key={film.episode_id} value={film}/>)}
             </section>
         )
     }
 }
-
-//<li key={film.episode_id}>{film.title}</li>

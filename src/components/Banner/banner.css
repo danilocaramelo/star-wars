@@ -1,12 +1,5 @@
-.banner-container {
-    height: 700px;
-    margin: auto;
-}
-
 .banner {
-    background-color: #fdfdfd;
-    height: 600px;
-    width: 80%;
+    height: 700px;
     margin: auto;
 }
 

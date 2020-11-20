@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&display=swap');
 
-.planetcard {
-
-}
-
 .planetcard-image {
     height: 20px;
 }
@@ -126,9 +122,6 @@
     font-size: large;
     font-family: 'Big Shoulders Stencil Display', cursive;
     text-align: center;
-}
-
-p {
     margin: 0;
     padding: 0;
 }

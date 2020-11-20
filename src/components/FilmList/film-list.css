@@ -1,8 +1,4 @@
-.film-list__title {
-
-}
-
-.film-list__container {
+.filmlist {
     display: grid;
     grid-gap: .7rem;
     grid-template-columns: 33.33% 33.33% 33.33%;
