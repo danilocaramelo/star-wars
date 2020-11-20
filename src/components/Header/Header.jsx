@@ -2,9 +2,9 @@ import React from "react";
 import "./title.css";
 import image from "../../assets/logo.jpg";
 
-export default function Title () {
+export default function Header () {
     return(
-        <div className={"title-container"}>
+        <div className={"title"}>
             <img className={"title-logo"} src={image}/>
             <a className={"title-link"} href="http://localhost:3000/">Movies</a>
             <a className={"title-link"} href={"http://localhost:3000/planets"}>Planets</a>

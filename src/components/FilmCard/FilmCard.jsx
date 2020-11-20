@@ -5,7 +5,6 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import "./filmcard.css";
-import image from "../../assets/movies/a_new_hope.png"
 
 const useStyles = makeStyles({
     root: {
