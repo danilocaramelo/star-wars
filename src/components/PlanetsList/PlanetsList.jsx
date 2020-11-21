@@ -1,8 +1,8 @@
 import React from "react";
 import "./planetslist.css";
-import axios from 'axios';
-
 import PlanetCard from "../PlanetCard/PlanetCard";
+import { getPlanets } from "../../api/api";
+
 import tatooine from "../../assets/planets/Tatooine.jpg";
 import alderaan from "../../assets/planets/Alderaan.jpeg";
 import yarvin from "../../assets/planets/Yarvin.webp";
@@ -21,25 +21,26 @@ export default class PlanetsList extends React.Component{
         planets: [],
     }
 
-    componentDidMount() {
-        axios.get('https://swapi.dev/api/planets')
-            .then(res =>{
-                const planets = res.data.results;
-                const images = [tatooine, alderaan, yarvin, bespin, endor, naboo,
-                    coruscant, hoth, kamino, dagobah]
-                const classNames = ["tatoine", "alderaan", "yarvin", "hoth", "dagobah",
-                "bespin", "endor", "naboo", "coruscant", "kamino"]
-                planets.forEach((planet, index) => {planet.image = images[index]});
-                planets.forEach((planet, index) => {planet.className = classNames[index]});
-                this.setState({planets});
-            })
+    async componentDidMount() {
+        const planets = await getPlanets();
+        const images = [tatooine, alderaan, yarvin, bespin, endor, naboo,
+            coruscant, hoth, kamino, dagobah]
+        const classNames = ["tatoine", "alderaan", "yarvin", "hoth", "dagobah",
+        "bespin", "endor", "naboo", "coruscant", "kamino"]
+        planets.forEach((planet, index) => {planet.image = images[index]});
+        planets.forEach((planet, index) => {planet.className = classNames[index]});
+        this.setState({planets});
     }
 
     render() {
         return(
             <section elevation={3} className={"planetslist"}>
                 {this.state.planets.map((planet, index) => <PlanetCard key={index} value={planet}/>)}
-                <img src={starship1} className={"planetslist-image__starship"}/>
+                <img
+                    src={starship1}
+                    className={"planetslist-image__starship"}
+                    alt={"star wars ship"}
+                />
             </section>
         )
     }
