@@ -12,6 +12,7 @@ export default function PlanetCard(props) {
                 onMouseLeave={() => setIsShow(false)}
                 className={"planetcard-image"}
                 src={props.value.image}
+                alt={props.value.name + ", star wars planet"}
             />
             {isShow && (
                 <div className={"planetcard-information"}>
