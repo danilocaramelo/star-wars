@@ -127,7 +127,7 @@ body {
 
 /*** Media queries for adjusting to different screen sizes ***/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .starwars-demo {
         font-size: 10px;
     }
