@@ -3,17 +3,22 @@
     margin: 4rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
     "tatoine . alderaan yarvin ."
     ". . bespin . endor"
-    ". planetslist-image__starship . . naboo"
-    ". coruscant . . ."
+    "planetslist-image__starship coruscant . . naboo"
     "hoth . kamino . dagobah";
 }
 
 .planetslist-image__starship {
     grid-area: planetslist-image__starship;
     height: 38px;
+}
+
+@media screen and (max-width: 768px) {
+    .planetslist-image__starship {
+        display: none;
+    }
 }

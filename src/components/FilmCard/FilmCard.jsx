@@ -16,7 +16,7 @@ export default function FilmCard (props) {
     const classes = useStyles();
 
     return(
-        <Card className={classes.root}>
+        <Card className={"filmcard"}>
             <CardMedia
                 component={"img"}
                 alt={"star wars"}

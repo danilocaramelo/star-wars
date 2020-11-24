@@ -6,3 +6,9 @@
 .banner-introduction {
     background: #000 url("../../assets/bg.jpg");
 }
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 400px;
+    }
+}

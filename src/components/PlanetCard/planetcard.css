@@ -4,104 +4,112 @@
     height: 20px;
 }
 
-.tatoine {
-    grid-area: tatoine;
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
+.planetcard-image:hover ~ .planetcard-information {
+    visibility: visible;
 }
 
-.tatoine > img {
-    height: 84px;
-}
+@media screen and (min-width: 768px) {
 
-.alderaan {
-    grid-area: alderaan;
-    grid-column: 3 / 3;
-    grid-row: 1 / 1;
-}
+    .tatoine {
+        grid-area: tatoine;
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
 
-.alderaan > img {
-    height: 101px;
-}
+    .tatoine > img {
+        height: 84px;
+    }
 
-.yarvin {
-    grid-area: yarvin;
-    grid-column: 4 / 4;
-    grid-row: 1 / 1;
-}
+    .alderaan {
+        grid-area: alderaan;
+        grid-column: 3 / 3;
+        grid-row: 1 / 1;
+    }
 
-.yarvin > img {
-    height: 82px;
-}
+    .alderaan > img {
+        height: 101px;
+    }
 
-.bespin {
-    grid-area: bespin;
-    grid-column: 3 / 3;
-    grid-row: 2 / 2;
-}
+    .yarvin {
+        grid-area: yarvin;
+        grid-column: 4 / 4;
+        grid-row: 1 / 1;
+    }
 
-.bespin > img {
-    height: 300px;
-}
+    .yarvin > img {
+        height: 82px;
+    }
 
-.endor {
-    grid-area: endor;
-    grid-column: 5 / 5;
-    grid-row: 2 / 2;
-}
+    .bespin {
+        grid-area: bespin;
+        grid-column: 3 / 3;
+        grid-row: 2 / 2;
+    }
 
-.endor > img {
-    height: 39px;
-}
+    .bespin > img {
+        height: 300px;
+    }
 
-.naboo {
-    grid-area: naboo;
-    grid-column: 5 / 5;
-    grid-row: 3 / 3;
-}
+    .endor {
+        grid-area: endor;
+        grid-column: 5 / 5;
+        grid-row: 2 / 2;
+    }
 
-.naboo > img {
-    height: 98px;
-}
+    .endor > img {
+        height: 39px;
+    }
 
-.coruscant {
-    grid-area: coruscant;
-    grid-column: 2 / 2;
-    grid-row: 4 / 4;
-}
+    .naboo {
+        grid-area: naboo;
+        grid-column: 5 / 5;
+        grid-row: 3 / 3;
+    }
 
-.coruscant > img {
-    height: 99px;
-}
+    .naboo > img {
+        height: 98px;
+    }
 
-.hoth {
-    grid-area: hoth;
-    grid-column: 1 / 1;
-    grid-row: 5 / 5;
-}
+    .coruscant {
+        grid-area: coruscant;
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+    }
 
-.hoth > img {
-    height: 58px;
-}
+    .coruscant > img {
+        height: 99px;
+    }
 
-.kamino {
-    grid-area: kamino;
-    grid-column: 3 / 3;
-    grid-row: 5 / 5;
-}
+    .hoth {
+        grid-area: hoth;
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
 
-.kamino > img {
-    height: 160px;
-}
+    .hoth > img {
+        height: 58px;
+    }
 
-.dagobah {
-    grid-area: dagobah;
-    grid-column: 5 / 5;
-    grid-row: 5 / 5;
-}
+    .kamino {
+        grid-area: kamino;
+        grid-column: 3 / 3;
+        grid-row: 4 / 4;
+    }
 
-.dagobah > img {
-    height: 72px;
+    .kamino > img {
+        height: 160px;
+    }
+
+    .dagobah {
+        grid-area: dagobah;
+        grid-column: 5 / 5;
+        grid-row: 4 / 4;
+    }
+
+    .dagobah > img {
+        height: 72px;
+    }
+
 }
 
 .planetcard-information {
@@ -110,6 +118,7 @@
     border-radius: .5rem;
     width: fit-content;
     padding: .1rem 2rem 2rem 2rem;
+    visibility: hidden;
 }
 
 .planetcard-title {
@@ -124,4 +133,100 @@
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .planetcard-image {
+        height: 120px;
+        margin: .5rem;
+    }
+
+    .planetcard-information {
+        visibility: visible;
+        padding: .5rem;
+        width: 220px;
+    }
+
+    .planetcard-title {
+        margin: 1rem;
+    }
+
+    .planetcard-text {
+        text-align: center;
+        margin: .5rem;
+    }
+
+    .tatoine {
+        display: flex;
+        margin: 1.5rem;
+        grid-row: 1 / 1;
+        grid-column: 1 / 5;
+    }
+
+    .alderaan {
+        display: flex;
+        margin: 1.5rem;
+        grid-row: 2 / 2;
+        grid-column: 1 / 5;
+    }
+
+    .yarvin {
+        display: flex;
+        margin: 1.5rem;
+        grid-row: 3 / 3;
+        grid-column: 1 / 5;
+    }
+
+    .bespin {
+        display: flex;
+        margin: 1.5rem;
+        grid-row: 4 / 4;
+        grid-column: 1 / 5;
+    }
+
+    .endor {
+        display: flex;
+        margin: 1.5rem;
+        grid-row: 5 / 5;
+        grid-column: 1 / 5;
+    }
+
+    .endor > .planetcard-image {
+        margin: 0;
+    }
+
+    .coruscant {
+        display: flex;
+        margin: 1.5rem;
+        grid-row: 6 / 6;
+        grid-column: 1 / 5;
+    }
+
+    .naboo {
+        display: flex;
+        margin: 1.5rem;
+        grid-row: 7 / 7;
+        grid-column: 1 / 5;
+    }
+
+    .hoth {
+        display: flex;
+        margin: 1.5rem;
+        grid-row: 8 / 8;
+        grid-column: 1 / 5;
+    }
+
+    .kamino {
+        display: flex;
+        margin: 1.5rem;
+        grid-row: 9 / 9;
+        grid-column: 1 / 5;
+    }
+
+    .dagobah {
+        display: flex;
+        margin: 1.5rem;
+        grid-row: 10 / 10;
+        grid-column: 1 / 5;
+    }
 }
