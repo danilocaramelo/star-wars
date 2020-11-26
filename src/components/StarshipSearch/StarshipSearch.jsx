@@ -1,6 +1,9 @@
 import React, {useState} from "react";
 import {searchStarships} from "../../api/api";
 import StarshipCard from "../StarshipCard/StarshipCard";
+import "./starshipsearch.css";
+import Button from "@material-ui/core/Button";
+import TextField from "@material-ui/core/TextField";
 
 export default function StarshipSearch() {
 
@@ -11,20 +14,34 @@ export default function StarshipSearch() {
         setInput(event.target.value)
     }
 
-    async function callAPI() {
+    async function callAPI(event) {
+        event.preventDefault();
         const apiResponse = await searchStarships(input)
         await setSearchResults(apiResponse)
     }
 
     return(
         <>
-            <input
-                type={"text"}
-                onChange={inputChange}
-                value={input}
-            />
-            <button type={'submit'} onClick={callAPI}>Serach</button>
-            {searchResults.map((starship, index) => <StarshipCard key={index} starship={starship}/>)}
+            <form className={"starship-search"}>
+                <input
+                    className={"starship-search__input"}
+                    placeholder={"Your starship here..."}
+                    type={"text"}
+                    onChange={inputChange}
+                    value={input}
+                />
+                <div className={"starship-search__button"}>
+                    <Button
+                        variant="contained"
+                        type={'submit'} onClick={callAPI}
+                    >
+                        Search
+                    </Button>
+                </div>
+            </form>
+            <div className={"starship-search__grid"}>
+                {searchResults.map((starship, index) => <StarshipCard key={index} starship={starship}/>)}
+            </div>
         </>
     )
 }
