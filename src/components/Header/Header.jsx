@@ -8,7 +8,7 @@ export default function Header () {
             <img className={"title-logo"} src={image} alt={"star wars logo"}/>
             <a className={"title-link"} href="http://localhost:3000/">Movies</a>
             <a className={"title-link"} href={"http://localhost:3000/planets"}>Planets</a>
-            <a className={"title-link"} href={"http://localhost:3000/planets"}>Spaceships</a>
+            <a className={"title-link"} href={"http://localhost:3000/starships"}>Starships</a>
         </div>
     )
 }
