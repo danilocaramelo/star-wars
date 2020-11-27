@@ -24,12 +24,5 @@ export const searchStarships = (search) => {
         .catch(erro => console.log(erro))
 }
 
-export const getCharacter = (url) => {
-    return axios.get(url)
-        .then(res => {
-            return res.data.results;
-        })
-        .catch(erro => console.log(erro))
-}
-
-export default {getPlanets, getMovies, searchStarships, getCharacter}
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {getPlanets, getMovies, searchStarships}

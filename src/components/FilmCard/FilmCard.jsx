@@ -4,7 +4,6 @@ import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import "./filmcard.css";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
@@ -14,6 +13,9 @@ const useStyles = makeStyles({
     },
     image: {
         height: "140px",
+    },
+    text: {
+        color: "black"
     }
 });
 
@@ -32,10 +34,10 @@ export default function FilmCard (props) {
                 className={classes.image}
             />
                 {matches && <CardContent>
-                <Typography variant={"h5"} className={"filmcard-title"} component={"h1"}>
+                <Typography variant={"h5"} className={classes.text} component={"h1"}>
                     {props.value.title}
                 </Typography>
-                <Typography variant={"body2"} className={"filmcard-title"} component={"p"}>
+                <Typography variant={"body2"} className={classes.text} component={"p"}>
                     {props.value.opening_crawl}
                 </Typography>
             </CardContent>}

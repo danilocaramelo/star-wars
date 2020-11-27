@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import RobotoFont from "./Fonts";
 
 export const GlobalStyle = createGlobalStyle`
-${RobotoFont}
 :root {
 --maxWidth: 1280px;
 --white: #fff;

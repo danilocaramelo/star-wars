@@ -12,13 +12,13 @@
     "hoth . kamino . dagobah";
 }
 
-.planetslist-image__starship {
+.planetslist__image__starship {
     grid-area: planetslist-image__starship;
     height: 38px;
 }
 
 @media screen and (max-width: 768px) {
-    .planetslist-image__starship {
+    .planetslist__image__starship {
         display: none;
     }
 }

@@ -5,7 +5,6 @@ import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
 import {makeStyles} from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import {getCharacter} from "../../api/api";
 
 
 const useStyles = makeStyles({

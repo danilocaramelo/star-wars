@@ -1,8 +1,7 @@
 import React from "react";
 import "./planetslist.css";
 import PlanetCard from "../PlanetCard/PlanetCard";
-import { getPlanets } from "../../api/api";
-
+import { getPlanets } from "../../service/api";
 import starship1 from "../../assets/starship1.jpg";
 import {connect} from "react-redux";
 
@@ -28,7 +27,7 @@ class PlanetsList extends React.Component{
                 {this.state.planets.map((planet, index) => <PlanetCard key={index} value={planet}/>)}
                 <img
                     src={starship1}
-                    className={"planetslist-image__starship"}
+                    className={"planetslist__image__starship"}
                     alt={"star wars ship"}
                 />
             </section>

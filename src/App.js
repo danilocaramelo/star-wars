@@ -2,7 +2,7 @@ import './App.css';
 import React, {Component} from "react";
 import { GlobalStyle } from "./styles/GlobalStyle";
 import Routes from "./routes";
-import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
 
 
 class App extends Component{
@@ -12,7 +12,7 @@ class App extends Component{
         return(
             <div className={"app"}>
                 <GlobalStyle/>
-                <Header/>
+                <Navbar/>
                 <Routes/>
             </div>
         )

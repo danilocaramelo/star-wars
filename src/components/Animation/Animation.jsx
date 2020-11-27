@@ -1,7 +1,7 @@
 import React from "react";
 import starImage from "../../assets/star.svg";
 import warsImage from "../../assets/wars.svg";
-import "./introduction.css";
+import "./animation.css";
 
 export default function Animation() {
     return(
