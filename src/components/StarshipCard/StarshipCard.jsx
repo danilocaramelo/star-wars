@@ -11,17 +11,6 @@ export default function StarshipCard(props) {
             minWidth: 200,
             backgroundColor: '#316f3d',
         },
-        bullet: {
-            display: 'inline-block',
-            margin: '0 2px',
-            transform: 'scale(0.8)',
-        },
-        title: {
-            fontSize: 14,
-        },
-        pos: {
-            marginBottom: 12,
-        },
     });
 
     const classes = useStyles();
@@ -44,10 +33,6 @@ export default function StarshipCard(props) {
                     </Typography>
                 </CardContent>
             </Card>
-            {/*<h1>{props.starship.name}</h1>*/}
-            {/*<p>Passengers: {props.starship.passengers}</p>*/}
-            {/*<p>Manufacter: {props.starship.manufacturer}</p>*/}
-            {/*<p>Max Atmosphering Speed{props.starship.max_atmosphering_speed}</p>*/}
         </>
     )
 }

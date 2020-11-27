@@ -21,15 +21,15 @@ export default function StarshipSearch() {
 
     return(
         <>
-            <form className={"starship-search"}>
+            <form className={"starship__search"}>
                 <input
-                    className={"starship-search__input"}
+                    className={"starship__search__input"}
                     placeholder={"Your starship here..."}
                     type={"text"}
                     onChange={inputChange}
                     value={input}
                 />
-                <div className={"starship-search__button"}>
+                <div className={"starship__search__button"}>
                     <Button
                         variant="contained"
                         type={'submit'} onClick={callAPI}
@@ -38,7 +38,7 @@ export default function StarshipSearch() {
                     </Button>
                 </div>
             </form>
-            <div className={"starship-search__grid"}>
+            <div className={"starship__search__grid"}>
                 {searchResults.map((starship, index) => <StarshipCard key={index} starship={starship}/>)}
             </div>
         </>
