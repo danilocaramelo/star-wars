@@ -1,9 +1,56 @@
-.filmlist {
+.filmlist-grid {
     display: grid;
-    grid-gap: .7rem;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-rows: 50% 50%;
-    width: 90%;
+    grid-template-columns: 1.4fr 0.4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-height: 800px;
+    grid-gap: 1rem;
+    width: 80%;
     margin: auto;
-    padding: 4rem 2rem 4rem;
+}
+
+.filmlist-banner {
+    grid-column: 1 / 1;
+    grid-row: 2 / 5;
+}
+
+.filmlist-filmcard {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    height: 60px;
+}
+
+.filmlist-filmcard:nth-child(2) {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.filmlist-filmcard:nth-child(3) {
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+}
+
+.filmlist-filmcard:nth-child(4) {
+    grid-column: 2 / 2;
+    grid-row: 4 / 4;
+}
+
+.filmlist-filmcard:nth-child(5) {
+    grid-column: 2 / 2;
+    grid-row: 5 / 5;
+}
+
+.filmlist-filmcard:nth-child(6) {
+    grid-column: 2 / 2;
+    grid-row: 6 / 6;
+}
+
+@media screen and (max-width: 768px) {
+    .filmlist-grid {
+        display: flex;
+    }
+
+    .filmlist {
+        margin: auto;
+        width: 90%;
+    }
 }

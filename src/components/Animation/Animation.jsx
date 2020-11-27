@@ -3,7 +3,7 @@ import starImage from "../../assets/star.svg";
 import warsImage from "../../assets/wars.svg";
 import "./introduction.css";
 
-export default function Introduction() {
+export default function Animation() {
     return(
         <div className="starwars-demo">
             <img src={starImage} alt="Star" className="star"/>

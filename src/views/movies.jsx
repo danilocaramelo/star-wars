@@ -5,7 +5,6 @@ import FilmList from "../components/FilmList/FilmList";
 export default function Movies() {
     return(
         <div>
-            <Banner/>
             <FilmList/>
         </div>
     )
