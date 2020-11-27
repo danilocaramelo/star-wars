@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {searchStarships} from "../../api/api";
+import {searchStarships} from "../../service/api";
 import StarshipCard from "../StarshipCard/StarshipCard";
 import "./starshipsearch.css";
 import Button from "@material-ui/core/Button";

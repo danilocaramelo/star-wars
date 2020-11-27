@@ -1,7 +1,7 @@
 import React from 'react';
 import FilmCard from "../FilmCard/FilmCard";
 import "./film-list.css";
-import {getMovies} from "../../api/api";
+import {getMovies} from "../../service/api";
 import {connect} from "react-redux";
 import FilmBanner from "../FilmBanner/FilmBanner";
 
@@ -29,15 +29,15 @@ class FilmList extends React.Component {
     render() {
 
         return(
-            <section className={"filmlist-grid"}>
-                <FilmBanner className={"filmlist-banner"} value={this.state.selectedFilm}/>
-                <section className={"filmlist"}>
+            <section className={"filmlist"}>
+                <FilmBanner className={"filmlist__banner"} value={this.state.selectedFilm}/>
+                <section className={"filmlist__list"}>
                     {this.state.films.map(film =>
                         <FilmCard
                             key={film.episode_id}
                             value={film}
                             callBack={(value) => this.onCardClick.bind(this, value)}
-                            className={"filmlist-filmcard"}
+                            className={"filmlist__filmcard"}
                         />
                         )}
                 </section>

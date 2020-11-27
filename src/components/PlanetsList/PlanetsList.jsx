@@ -1,7 +1,7 @@
 import React from "react";
 import "./planetslist.css";
 import PlanetCard from "../PlanetCard/PlanetCard";
-import { getPlanets } from "../../api/api";
+import { getPlanets } from "../../service/api";
 
 import starship1 from "../../assets/starship1.jpg";
 import {connect} from "react-redux";
