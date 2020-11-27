@@ -24,4 +24,5 @@ export const searchStarships = (search) => {
         .catch(erro => console.log(erro))
 }
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {getPlanets, getMovies, searchStarships}
