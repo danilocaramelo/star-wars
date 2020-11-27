@@ -4,15 +4,15 @@
     display: flex;
 }
 
-.title-logo-link {
+.title__logo__link {
     width: 125px;
 }
 
-.title-logo {
+.title__logo {
     height: 100%;
 }
 
-.title-link {
+.title__link {
     color: #fdfdfd;
     text-decoration: none;
     font-size: large;
@@ -21,15 +21,15 @@
 }
 
 @media screen and (max-width: 768px){
-    .title-logo {
+    .title__logo {
         display: none;
     }
 
-    .title-logo-link {
+    .title__logo__link {
         display: none;
     }
 
-    .title-link {
+    .title__link {
         margin: auto;
     }
 }
