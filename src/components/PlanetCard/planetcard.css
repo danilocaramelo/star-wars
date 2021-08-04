@@ -138,7 +138,7 @@
 @media screen and (max-width: 768px) {
     .planetcard__image {
         height: 120px;
-        margin: .5rem;
+        margin: 2rem;
     }
 
     .planetcard__information {
@@ -189,10 +189,6 @@
         margin: 1.5rem;
         grid-row: 5 / 5;
         grid-column: 1 / 5;
-    }
-
-    .endor > .planetcard__image {
-        margin: 0;
     }
 
     .coruscant {
