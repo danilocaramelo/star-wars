@@ -191,10 +191,6 @@
         grid-column: 1 / 5;
     }
 
-    /* .endor > .planetcard__image {
-        margin: 0;
-    } */
-
     .coruscant {
         display: flex;
         margin: 1.5rem;
